@@ -25,12 +25,12 @@
     padding: 56px 28px 80px;
     align-items: flex-start;
   }
+  .sidebar-spacer { width: 220px; flex-shrink: 0; }
   .sidebar {
-    position: sticky;
-    top: 56px;
+    position: fixed;
+    top: 102px;
+    left: max(28px, calc(50vw - 482px));
     width: 220px;
-    flex-shrink: 0;
-    padding-top: 46px;
   }
   .sidebar img {
     width: 100%;
@@ -76,6 +76,7 @@
   /* ---- mobile: stack ---- */
   @media (max-width: 820px) {
     .layout { display: block; padding: 30px 22px 60px; }
+    .sidebar-spacer { display: none; }
     .sidebar { position: static; width: auto; margin-bottom: 26px; }
     .sidebar img { max-width: 150px; }
   }
@@ -90,6 +91,7 @@
 </head>
 <body>
 <div class="layout">
+<div class="sidebar-spacer"></div>
 
 <aside class="sidebar">
   <img src="photo.jpg" alt="Soohyun Roh" onerror="this.style.display='none'">
