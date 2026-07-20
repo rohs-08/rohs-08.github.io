@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Soohyun Roh</title>
+<meta name="description" content="Soohyun Roh — PhD Candidate, MIT Sloan School of Management. Research on the organization of work, job design, and pay inequality between firms.">
+<style>
+  :root { --text:#1a1a1a; --muted:#555; --line:#d8d8d8; --link:#1a4a8a; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    color: var(--text);
+    background: #ffffff;
+    margin: 0;
+    line-height: 1.55;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 40px 22px 80px; }
+  header { margin-bottom: 6px; }
+  h1 { font-size: 2rem; margin: 0 0 2px; font-weight: normal; letter-spacing: .5px; }
+  .subtitle { color: var(--muted); margin: 0 0 10px; }
+  nav { margin: 14px 0 8px; font-size: .95rem; }
+  nav a { margin-right: 18px; color: var(--link); text-decoration: none; }
+  nav a:hover { text-decoration: underline; }
+  hr { border: none; border-top: 1px solid var(--line); margin: 26px 0; }
+  h2 { font-size: 1.15rem; font-weight: bold; letter-spacing: .04em; text-transform: uppercase; margin: 34px 0 6px; }
+  h2 + hr { margin: 6px 0 18px; }
+  h3 { font-size: 1rem; margin: 22px 0 4px; }
+  .profile { display: flex; gap: 26px; align-items: flex-start; flex-wrap: wrap; margin-top: 18px; }
+  .profile img { width: 178px; border-radius: 4px; flex-shrink: 0; }
+  .profile .bio { flex: 1; min-width: 260px; margin: 0; }
+  .paper { margin-bottom: 20px; }
+  .paper .title { font-style: italic; }
+  .paper .authors { }
+  .paper .status { color: var(--muted); }
+  .paper .links { font-size: .92rem; }
+  .paper .links a, a { color: var(--link); }
+  .abs-toggle {
+    font-size: .9rem; color: var(--link); cursor: pointer;
+    background: none; border: none; padding: 0; font-family: inherit; text-decoration: underline;
+  }
+  .abstract {
+    display: none; font-size: .95rem; color: #333;
+    border-left: 3px solid var(--line); padding: 2px 0 2px 14px; margin: 8px 0 0;
+  }
+  .abstract.open { display: block; }
+  .contact { font-size: .95rem; color: var(--muted); }
+  .contact a { color: var(--link); }
+  footer { margin-top: 60px; font-size: .85rem; color: #999; }
+</style>
+<script>
+  function toggleAbs(btn) {
+    var abs = btn.parentElement.parentElement.querySelector('.abstract');
+    var open = abs.classList.toggle('open');
+    btn.textContent = open ? 'Hide abstract' : 'Abstract';
+  }
+</script>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Soohyun Roh</h1>
+  <p class="subtitle">PhD Candidate &middot; MIT Sloan School of Management &middot; Institute for Work and Employment Research</p>
+  <p class="contact">
+    <a href="mailto:rohs@mit.edu">rohs@mit.edu</a> &nbsp;&middot;&nbsp;
+    <a href="cv.pdf">Curriculum Vitae</a>
+  </p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<hr>
+
+<section id="about">
+  <div class="profile">
+    <img src="photo.jpg" alt="Soohyun Roh" onerror="this.style.display='none'">
+    <p class="bio">
+      I am a PhD candidate at the MIT Sloan School of Management, affiliated with the
+      Institute for Work and Employment Research. My research focuses on the organization
+      of work&mdash;how firms design jobs and tasks, set pay, and restructure work in response
+      to markets and technology&mdash;and its consequences for pay inequality between firms
+      and workers. Combining restricted-access administrative records and large-scale
+      digital traces with field interviews, I study the constraints and discretion that
+      shape employers&rsquo; choices, and their distributional consequences for workers.
+      <br><br>
+      I am on the 2026&ndash;27 academic job market.
+    </p>
+  </div>
+</section>
+
+<h2 id="research">Job Market Paper</h2>
+<hr>
+
+<div class="paper">
+  <span class="title">&ldquo;From Wallets to Wages: Consumer Income, Job Design, and Pay Disparities&rdquo;</span><br>
+  <span class="links"><button class="abs-toggle" onclick="toggleAbs(this)">Abstract</button> &nbsp;&middot;&nbsp; Draft available upon request</span>
+  <div class="abstract">
+    What drives pay inequality between organizations? This study identifies a less explored
+    constraint on employer discretion in pay setting: the income of a firm&rsquo;s customers.
+    Because higher-income consumers demand higher-quality goods and services, firms serving
+    them design jobs around distinct, higher-skill task structures to deliver quality, while
+    firms serving lower-income consumers assign broader, general task sets to contain
+    turnover costs&mdash;generating pay differences across otherwise similar firms. I test this
+    theory by constructing the first large-scale establishment-level dataset linking consumer
+    income, measured from mobile location data, to workplace pay from restricted-use Bureau
+    of Labor Statistics records, and by probing the mechanism with interviews of restaurant
+    managers, the task content of online job postings, and worker-reported pay from an online
+    employer-review platform. Even within the same narrow industry and neighborhood, consumer
+    income predicts establishment pay. Jobs at establishments serving higher-income consumers
+    involve tasks with greater market value and are more specialized, and the associated pay
+    premiums primarily reflect worker selection rather than rent sharing.
+  </div>
+</div>
+
+<h2>Publications</h2>
+<hr>
+
+<div class="paper">
+  <span class="authors">Clem Aeppli*, Soohyun Roh*, and Nathan Wilmers.</span>
+  <span class="title">&ldquo;Rising Wages and the Decline of Low-wage Work.&rdquo;</span>
+  <span class="status">Accepted, <em>American Sociological Review</em>. (*equal first authorship)</span><br>
+  <span class="links"><button class="abs-toggle" onclick="toggleAbs(this)">Abstract</button></span>
+  <div class="abstract">
+    From 2014 to 2024, the share of US hourly workers paid below $15 in real terms fell by
+    two-thirds, from 38% to 13%. Why? We first distinguish entry and exit from organizational
+    changes among incumbent employers. Organizational changes can, in turn, be imposed on
+    employers by external constraints, like labor market tightness, or emerge from the pursuit
+    of new opportunities. Using restricted-access panel data drawn from administrative records
+    and job reviews, we bring this framework to bear on the recent wage gains at the bottom of
+    the labor market. Contrary to creative-destruction predictions, employer exit contributed
+    little to rising pay at the bottom. Low-paying employers of low-wage occupations contracted,
+    but the main driver of rising pay was low- and middle-paying incumbent employers of low-wage
+    occupations increasing pay. These gains in low-wage occupations were associated with
+    tightening labor markets and increased minimum wages. But over and above these external
+    constraints, employers also pursued new opportunities for reorganizing work in low-skill
+    jobs. Notwithstanding organizational inertia, major gains for workers&rsquo; pay can come from
+    changes in existing workplaces.
+  </div>
+</div>
+
+<div class="paper">
+  <span class="authors">Roh, Soohyun and Nathan Wilmers. 2026.</span>
+  <span class="title">&ldquo;Declining Inequality and Persistent Inequality Structures.&rdquo;</span>
+  <span class="status"><em>Sociological Science</em> 13: 614&ndash;644.</span><br>
+  <span class="links"><button class="abs-toggle" onclick="toggleAbs(this)">Abstract</button> &nbsp;&middot;&nbsp; <a href="https://doi.org/10.15195/v13.a24">Article</a></span>
+  <div class="abstract">
+    Prior research finds that rising labor market inequality in the United States was abetted
+    by structural changes in the economy: a consolidation of occupation and organizational bases
+    of advantage; rising within-job inequality; and declining pay and employment in middle-earning
+    jobs. In this article, we revisit these structural changes by asking whether they have been
+    reversed as labor market inequality fell over the last decade. Drawing on restricted-use
+    microdata from the Occupational Employment and Wages Statistics, we find that declining
+    inequality is due to declining inequality in occupation premiums. There has been only a small
+    reversal of consolidation and no decrease in inequality within jobs. Low-wage jobs gained on
+    shrinking middle-earning occupations, further eroding union, manufacturing, and public sector
+    wage premiums. These findings demonstrate a novel configuration of labor market inequality,
+    in which pay rose in low-wage jobs, but underlying inequality structures in the economy
+    persisted.
+  </div>
+</div>
+
+<h2>Working Papers</h2>
+<hr>
+
+<div class="paper">
+  <span class="authors">Wilmers, Nathan, Soohyun Roh, and Jiawei Tang.</span>
+  <span class="title">&ldquo;Corporate Minimum Wages and Working Poverty.&rdquo;</span>
+  <span class="status">Revise &amp; Resubmit, <em>ILR Review</em>.</span><br>
+  <span class="links"><button class="abs-toggle" onclick="toggleAbs(this)">Abstract</button></span>
+  <div class="abstract">
+    Starting in 2014, large US retail and warehouse employers began publicizing new voluntary
+    corporate minimum wages. These minimums provided a new wage floor affecting millions of
+    workers. We draw on novel employer-linked household panel data to investigate the impact of
+    this new organizational policy on workers. Corporate minimums effectively reduce low-wage
+    work and narrow pay gaps within organizations. These policies deliver substantial reductions
+    in covered workers&rsquo; likelihood of poverty. Working poverty at adopting firms falls sharply
+    by 30% to 50%, relative to workers in similar jobs, labor markets and competitor employers.
+    Poverty reduction is not explained by shifting worker selection, pre-trends, or offsetting
+    decreases in hours or health insurance. However, adopters employ more college-educated
+    workers and intensify work. These findings show that wage-setting decisions by large
+    employers have substantial social consequences, shaping inequality at the bottom of the
+    labor market.
+  </div>
+</div>
+
+<h2>Work in Progress</h2>
+<hr>
+
+<div class="paper">
+  <span class="authors">Roh, Soohyun.</span>
+  <span class="title">&ldquo;Technological Change and the Reorganization of Work.&rdquo;</span><br>
+  <span class="links" style="color:#555">Links resume and patent data to show that new technologies concentrate affected
+  tasks within the jobs that perform them, and that workers in these increasingly specialized
+  jobs report intensified work.</span>
+</div>
+
+<h2 id="contact">Contact</h2>
+<hr>
+
+<p class="contact">
+  Soohyun Roh<br>
+  MIT Sloan School of Management<br>
+  100 Main Street, E62-381<br>
+  Cambridge, MA 02139<br>
+  <a href="mailto:rohs@mit.edu">rohs@mit.edu</a>
+</p>
+
+<footer>Last updated July 2026.</footer>
+
+</div>
+</body>
+</html>
